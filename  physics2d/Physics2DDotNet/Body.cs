@@ -45,7 +45,7 @@ namespace Physics2DDotNet
     /// This is the Physical Body that collides in the engine.
     /// </summary>
     [Serializable]
-    public sealed class Body : IPhysicsEntity, IDuplicateable<Body>
+    public class Body : IPhysicsEntity, IDuplicateable<Body>
     {
         #region static methods
         private static MassInfo GetMassInfo(Scalar mass, IShape shape)
